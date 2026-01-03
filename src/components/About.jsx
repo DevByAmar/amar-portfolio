@@ -27,7 +27,7 @@ const About = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-accent to-purple rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-primary border border-white/10 flex items-center justify-center">
                  <img 
-                   src="/src/assets/amar.jpg" 
+                   src="./src/assets/amar.jpg" 
                    alt="Amar Sharma" 
                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
                  />
