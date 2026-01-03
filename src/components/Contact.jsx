@@ -81,7 +81,7 @@ const Contact = () => {
                         <Mail className="w-6 h-6" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg text-white">Email Stream</h4>
+                        <h4 className="font-bold text-lg text-text">Email Stream</h4>
                         <a href="mailto:amarsharma.developer@gmail.com" className="text-text-muted hover:text-accent transition-colors font-mono text-sm">
                           amarsharma.developer@gmail.com
                         </a>
@@ -93,7 +93,7 @@ const Contact = () => {
                         <Phone className="w-6 h-6" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg text-white">Voice Link</h4>
+                        <h4 className="font-bold text-lg text-text">Voice Link</h4>
                         <p className="text-text-muted font-mono text-sm">+91 9546216498</p>
                       </div>
                     </div>
@@ -103,7 +103,7 @@ const Contact = () => {
                         <MapPin className="w-6 h-6" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg text-white">Coordinates</h4>
+                        <h4 className="font-bold text-lg text-text">Coordinates</h4>
                         <p className="text-text-muted font-mono text-sm">India, Earth</p>
                       </div>
                     </div>
@@ -111,7 +111,7 @@ const Contact = () => {
             </div>
 
             <div className="pt-4">
-              <h4 className="font-bold text-lg mb-4 text-white">Social Uplinks</h4>
+              <h4 className="font-bold text-lg mb-4 text-text">Social Uplinks</h4>
               <div className="flex space-x-4">
                 <a href="#" className="bg-secondary p-4 rounded-xl border border-white/10 text-text-muted hover:text-white hover:border-accent hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all duration-300 group">
                   <Github className="w-6 h-6 group-hover:scale-110 transition-transform" />
@@ -138,7 +138,7 @@ const Contact = () => {
                   name="name"
                   id="name"
                   required
-                  className="w-full bg-secondary/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all font-mono"
+                  className="w-full bg-secondary/50 border border-white/10 rounded-lg px-4 py-3 text-text focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all font-mono"
                   placeholder="Enter your name..."
                 />
               </div>
@@ -149,7 +149,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   required
-                  className="w-full bg-secondary/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple transition-all font-mono"
+                  className="w-full bg-secondary/50 border border-white/10 rounded-lg px-4 py-3 text-text focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple transition-all font-mono"
                   placeholder="name@domain.com"
                 />
               </div>
@@ -161,7 +161,7 @@ const Contact = () => {
                   id="message"
                   required
                   rows="4"
-                  className="w-full bg-secondary/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-all font-mono"
+                  className="w-full bg-secondary/50 border border-white/10 rounded-lg px-4 py-3 text-text focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-all font-mono"
                   placeholder="System.out.print('Hello World')..."
                 ></textarea>
               </div>

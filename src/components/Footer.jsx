@@ -7,7 +7,7 @@ const Footer = () => {
         
         <div className="container-custom text-center">
           <p className="text-text-muted text-sm flex items-center justify-center gap-1">
-            Developed with <Heart className="w-4 h-4 text-purple animate-pulse fill-purple" /> by <span className="text-white font-bold">Amar Sharma</span>
+            Developed with <Heart className="w-4 h-4 text-purple animate-pulse fill-purple" /> by <span className="text-text font-bold">Amar Sharma</span>
           </p>
           <p className="text-xs text-text-muted mt-2 opacity-60">
             &copy; {new Date().getFullYear()} All systems operational.

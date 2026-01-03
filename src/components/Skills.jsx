@@ -73,14 +73,14 @@ const Skills = () => {
                   {category.icon}
                 </div>
                 
-                <h3 className="text-xl font-bold mb-4 group-hover:text-white transition-colors">
+                <h3 className="text-xl font-bold mb-4 group-hover:text-text transition-colors">
                     {category.title}
                 </h3>
                 
                 <ul className="space-y-3">
                   {category.skills.map((skill) => (
                     <li key={skill} className="flex items-center text-text-muted group-hover:text-text transition-colors">
-                      <Terminal className="w-3.5 h-3.5 mr-2 text-white/20 group-hover:text-accent transition-colors" />
+                      <Terminal className="w-3.5 h-3.5 mr-2 text-text/20 group-hover:text-accent transition-colors" />
                       <span className="text-sm font-medium">{skill}</span>
                     </li>
                   ))}

@@ -44,7 +44,7 @@ const Experience = () => {
                <div className="bg-secondary/80 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:border-accent/30 transition-all duration-300 group shadow-xl">
                  <div className="flex justify-between items-start mb-4">
                    <div>
-                     <h3 className="text-xl font-bold text-white group-hover:text-accent transition-colors">Full-Stack Developer</h3>
+                     <h3 className="text-xl font-bold text-text group-hover:text-accent transition-colors">Full-Stack Developer</h3>
                      <p className="text-purple font-medium">ITboxss</p>
                    </div>
                    <div className="flex items-center text-text-muted text-xs bg-white/5 px-2 py-1 rounded">

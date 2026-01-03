@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Default (Dark) - Slate 950/900 base */
+  --color-primary: 2 6 23; 
+  --color-secondary: 15 23 42;
+  --color-accent: 6 182 212;
+  --color-accent-dark: 8 145 178;
+  --color-purple: 139 92 246;
+  --color-text: 241 245 249;
+  --color-text-muted: 148 163 184;
+}
+
+[data-theme="light"] {
+  /* Light - Slate 50/White base */
+  --color-primary: 248 250 252;
+  --color-secondary: 255 255 255;
+  --color-accent: 8 145 178;  /* Darker cyan */
+  --color-accent-dark: 14 116 144;
+  --color-purple: 124 58 237; /* Darker violet */
+  --color-text: 15 23 42;     /* Slate 900 */
+  --color-text-muted: 71 85 105; /* Slate 600 */
+}
+
 @layer base {
   body {
     @apply bg-primary text-text font-sans antialiased overflow-x-hidden;

@@ -39,11 +39,11 @@ const About = () => {
             </div>
 
             <div className="space-y-6 text-lg text-text-muted">
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-2xl font-bold text-text mb-2">
                 Tech enthusiast with a <span className="text-accent">creative edge</span>.
               </h3>
               <p>
-                Hi! I'm <span className="text-white font-semibold">Amar Kumar</span>, a Full-Stack Developer with a BCA degree and a passion for building future-ready web applications.
+                Hi! I'm <span className="text-text font-semibold">Amar Kumar</span>, a Full-Stack Developer with a BCA degree and a passion for building future-ready web applications.
               </p>
               <div className="p-4 rounded-lg bg-secondary/50 border-l-4 border-accent border-y border-r border-white/5 backdrop-blur-sm">
                 <p className="italic text-sm">

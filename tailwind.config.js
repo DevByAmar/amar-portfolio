@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#020617", // Slate 950 - Very dark background
-        secondary: "#0f172a", // Slate 900 - Card background
-        accent: "#06b6d4", // Cyan 500 - Primary Neon
-        "accent-dark": "#0891b2", // Cyan 600
-        purple: "#8b5cf6", // Violet 500 - Secondary Neon
-        text: "#f1f5f9", // Slate 100
-        "text-muted": "#94a3b8", // Slate 400
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        accent: "rgb(var(--color-accent) / <alpha-value>)",
+        "accent-dark": "rgb(var(--color-accent-dark) / <alpha-value>)",
+        purple: "rgb(var(--color-purple) / <alpha-value>)",
+        text: "rgb(var(--color-text) / <alpha-value>)",
+        "text-muted": "rgb(var(--color-text-muted) / <alpha-value>)",
       },
       fontFamily: {
         sans: ['Space Grotesk', 'sans-serif'],

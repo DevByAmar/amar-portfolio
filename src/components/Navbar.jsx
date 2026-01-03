@@ -1,8 +1,23 @@
-import { useState } from 'react';
-import { Menu, X, Terminal } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Terminal, Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+        return localStorage.getItem('theme') || 'dark';
+    }
+    return 'dark';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  };
 
   const navLinks = [
     { name: 'About', href: '#about' },
@@ -25,25 +40,41 @@ const Navbar = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="relative text-text-muted hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium group"
+                  className="relative text-text-muted hover:text-text transition-colors duration-300 px-3 py-2 text-sm font-medium group"
                 >
                   {link.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
                 </a>
               ))}
+              
+              <button 
+                onClick={toggleTheme}
+                className="p-2 rounded-full bg-secondary/80 border border-white/10 text-accent hover:bg-accent hover:text-text transition-colors duration-300 backdrop-blur-sm"
+                aria-label="Toggle Theme"
+              >
+                {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button and Theme toggle */}
+          <div className="md:hidden flex items-center gap-4">
+             <button 
+                onClick={toggleTheme}
+                className="p-2 rounded-full bg-secondary/80 border border-white/10 text-accent hover:bg-accent hover:text-text transition-colors duration-300 backdrop-blur-sm"
+                aria-label="Toggle Theme"
+              >
+                {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-text-muted hover:text-white hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
+              className="inline-flex items-center justify-center p-2 rounded-md text-text-muted hover:text-text hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
