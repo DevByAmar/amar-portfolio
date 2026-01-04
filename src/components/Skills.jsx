@@ -6,13 +6,13 @@ const Skills = () => {
     {
       title: "Frontend Architect",
       icon: <Layout className="w-6 h-6 text-accent" />,
-      skills: ["React", "Tailwind CSS", "Framer Motion", "HTML5/CSS3", "JavaScript (ES6+)"],
+      skills: ["React", "Tailwind CSS", "Bootstrap", "Framer Motion", "HTML5/CSS3", "JavaScript (ES6+)"],
       color: "from-accent to-blue-600"
     },
     {
       title: "Backend Engine",
       icon: <Server className="w-6 h-6 text-purple" />,
-      skills: ["Node.js", "Express", "PHP", "RESTful APIs", "Authentication"],
+      skills: ["Node.js", "Express", "PHP", "Drupal CMS", "RESTful APIs", "Authentication"],
       color: "from-purple to-pink-600"
     },
     {

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Linkedin, Github, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Send, CheckCircle, AlertCircle, Instagram } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-accent/5 to-transparent z-0"></div>
 
@@ -72,23 +72,23 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             className="space-y-8"
           >
-            <div className="glass p-8 rounded-2xl border border-white/5 relative overflow-hidden group">
+            <div className="glass p-6 md:p-8 rounded-2xl border border-white/5 relative overflow-hidden group">
                  <div className="absolute top-0 right-0 p-16 bg-accent/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-accent/20 transition-colors"></div>
                  
                  <div className="relative z-10 space-y-6">
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="bg-white/5 p-3 rounded-lg text-accent border border-white/10">
                         <Mail className="w-6 h-6" />
                       </div>
                       <div>
                         <h4 className="font-bold text-lg text-text">Email Stream</h4>
-                        <a href="mailto:amarsharma.developer@gmail.com" className="text-text-muted hover:text-accent transition-colors font-mono text-sm">
+                        <a href="mailto:amarsharma.developer@gmail.com" className="text-text-muted hover:text-accent transition-colors font-mono text-xs sm:text-sm whitespace-nowrap">
                           amarsharma.developer@gmail.com
                         </a>
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="bg-white/5 p-3 rounded-lg text-purple border border-white/10">
                         <Phone className="w-6 h-6" />
                       </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="bg-white/5 p-3 rounded-lg text-pink-500 border border-white/10">
                         <MapPin className="w-6 h-6" />
                       </div>
@@ -113,11 +113,14 @@ const Contact = () => {
             <div className="pt-4">
               <h4 className="font-bold text-lg mb-4 text-text">Social Uplinks</h4>
               <div className="flex space-x-4">
-                <a href="#" className="bg-secondary p-4 rounded-xl border border-white/10 text-text-muted hover:text-white hover:border-accent hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all duration-300 group">
+                <a href="https://github.com/DevByAmar" target="_blank" rel="noopener noreferrer" className="bg-secondary p-4 rounded-xl border border-white/10 text-text-muted hover:text-white hover:bg-accent hover:border-accent hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all duration-300 group">
                   <Github className="w-6 h-6 group-hover:scale-110 transition-transform" />
                 </a>
-                <a href="#" className="bg-secondary p-4 rounded-xl border border-white/10 text-text-muted hover:text-white hover:border-purple hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all duration-300 group">
+                <a href="https://www.linkedin.com/in/amar-sharma-97b8b62b4/" target="_blank" rel="noopener noreferrer" className="bg-secondary p-4 rounded-xl border border-white/10 text-text-muted hover:text-white hover:bg-purple hover:border-purple hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all duration-300 group">
                   <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                </a>
+                <a href="https://www.instagram.com/amar_sharma_997/" target="_blank" rel="noopener noreferrer" className="bg-secondary p-4 rounded-xl border border-white/10 text-text-muted hover:text-white hover:bg-pink-500 hover:border-pink-500 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all duration-300 group">
+                  <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>
@@ -162,7 +165,7 @@ const Contact = () => {
                   required
                   rows="4"
                   className="w-full bg-secondary/50 border border-white/10 rounded-lg px-4 py-3 text-text focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-all font-mono"
-                  placeholder="System.out.print('Hello World')..."
+                  placeholder="Type your code here…"
                 ></textarea>
               </div>
               

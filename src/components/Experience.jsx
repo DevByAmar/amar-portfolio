@@ -41,34 +41,41 @@ const Experience = () => {
                    <div className="absolute inset-0 bg-accent animate-ping opacity-75 rounded-full"></div>
                </div>
 
-               <div className="bg-secondary/80 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:border-accent/30 transition-all duration-300 group shadow-xl">
-                 <div className="flex justify-between items-start mb-4">
-                   <div>
-                     <h3 className="text-xl font-bold text-text group-hover:text-accent transition-colors">Full-Stack Developer</h3>
-                     <p className="text-purple font-medium">ITboxss</p>
+               <div className="bg-secondary/60 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-accent/40 transition-all duration-300 group shadow-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.15)] relative overflow-hidden">
+                 {/* Glow Effect */}
+                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-accent/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 relative z-10">
+                   <div className="mb-4 md:mb-0">
+                     <h3 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">Full-Stack Developer</h3>
+                     <p className="text-purple font-mono font-medium text-lg mt-1">ITboxss</p>
                    </div>
-                   <div className="flex items-center text-text-muted text-xs bg-white/5 px-2 py-1 rounded">
-                     <Calendar className="w-3 h-3 mr-1" />
+                   <div className="flex items-center text-accent text-sm font-bold bg-accent/10 px-4 py-2 rounded-full border border-accent/20 shadow-[0_0_10px_rgba(6,182,212,0.1)]">
+                     <Calendar className="w-4 h-4 mr-2" />
                      <span>2024 - Present</span>
                    </div>
                  </div>
                  
                  <ul className="space-y-3 text-text-muted text-sm list-none">
                    <li className="flex items-start">
-                        <span className="mr-2 mt-1.5 w-1 h-1 bg-accent rounded-full"></span>
-                        Developed and maintained responsive web applications using React and Node.js.
+                        <span className="mr-3 mt-1.5 min-w-[6px] h-1.5 bg-accent rounded-full shadow-[0_0_5px_rgba(6,182,212,0.8)]"></span>
+                        <span className="text-gray-300">Developed and maintained responsive web applications using React and Node.js.</span>
                    </li>
                    <li className="flex items-start">
-                        <span className="mr-2 mt-1.5 w-1 h-1 bg-accent rounded-full"></span>
-                        Collaborated with the design team to implement modern UIs with pixel-perfect accuracy.
+                        <span className="mr-3 mt-1.5 min-w-[6px] h-1.5 bg-accent rounded-full shadow-[0_0_5px_rgba(6,182,212,0.8)]"></span>
+                        <span className="text-gray-300">Detailed work on <strong>Drupal CMS</strong>, managing complex content structures and custom module development.</span>
                    </li>
                    <li className="flex items-start">
-                        <span className="mr-2 mt-1.5 w-1 h-1 bg-accent rounded-full"></span>
-                        Optimized database queries in MySQL/MongoDB for better performance.
+                        <span className="mr-3 mt-1.5 min-w-[6px] h-1.5 bg-accent rounded-full shadow-[0_0_5px_rgba(6,182,212,0.8)]"></span>
+                        <span className="text-gray-300">Collaborated with the design team to implement modern UIs with pixel-perfect accuracy.</span>
                    </li>
                    <li className="flex items-start">
-                        <span className="mr-2 mt-1.5 w-1 h-1 bg-accent rounded-full"></span>
-                        Integrated REST APIs and third-party services like payment gateways.
+                        <span className="mr-3 mt-1.5 min-w-[6px] h-1.5 bg-accent rounded-full shadow-[0_0_5px_rgba(6,182,212,0.8)]"></span>
+                        <span className="text-gray-300">Optimized database queries in MySQL/MongoDB for better performance.</span>
+                   </li>
+                   <li className="flex items-start">
+                        <span className="mr-3 mt-1.5 min-w-[6px] h-1.5 bg-accent rounded-full shadow-[0_0_5px_rgba(6,182,212,0.8)]"></span>
+                        <span className="text-gray-300">Integrated REST APIs and third-party services like payment gateways.</span>
                    </li>
                  </ul>
                </div>
